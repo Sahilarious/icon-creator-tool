@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/TaskListBrowser/TaskListBrowser.uss?fileID=7433441132597879392&amp;guid=f3c8879a9a4bfd84c867ef49273dcca8&amp;type=3#TaskListBrowser" />
+    <ui:VisualElement name="parent" style="margin-left: 0; margin-right: 0; margin-top: 5px; margin-bottom: 5px; width: 100%; height: 100%; flex-grow: 1;">
+        <ui:Label text="Task List Browser" name="mainHeader" class="mainHeader" style="font-size: 24px; -unity-font-style: bold; margin-right: 5px; margin-left: 5px;" />
+        <ui:VisualElement name="horizonalDivider" class="horizontalDivider" />
+        <ui:VisualElement name="buttonContainer" style="flex-direction: row;">
+            <ui:Button text="+ Add New List" display-tooltip-when-elided="true" name="addListButton" class="browserButtons" />
+            <ui:Button text="Load Browser" display-tooltip-when-elided="true" name="loadBrowserButton" class="browserButtons" />
+            <ui:Button text="Save Browser" display-tooltip-when-elided="true" name="saveBrowserButton" class="browserButtons" />
+        </ui:VisualElement>
+        <ui:VisualElement name="listContainersParent" style="width: 100%; height: 100%; justify-content: flex-start; align-items: flex-start; padding-left: 20px; padding-right: 20px; padding-top: 20px; padding-bottom: 20px; flex-direction: row; flex-wrap: wrap;" />
+    </ui:VisualElement>
+</ui:UXML>

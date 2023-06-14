@@ -1,0 +1,52 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/IconCreator/IconCreatorWindow.uss?fileID=7433441132597879392&amp;guid=593b792daaf928a48b2cd4ea0bb641c5&amp;type=3#IconCreatorWindow" />
+    <ui:VisualElement name="parentContainer" style="width: 100%; height: 100%; flex-direction: column; align-items: flex-start; padding-top: 20px;">
+        <ui:VisualElement name="VisualElement" style="flex-direction: row; justify-content: space-around; width: 100%; padding-top: 10px;">
+            <ui:VisualElement style="align-items: center;">
+                <UIImage name="viewport" style="width: 400px; height: 400px; border-left-color: rgb(60, 60, 60); border-right-color: rgb(60, 60, 60); border-top-color: rgb(60, 60, 60); border-bottom-color: rgb(60, 60, 60); border-left-width: 5px; border-right-width: 5px; border-top-width: 5px; border-bottom-width: 5px; margin-bottom: 10px;" />
+                <ui:VisualElement name="buttonsContainer" style="height: 50px; width: 100%; flex-direction: row; justify-content: space-between; padding-left: 40px; padding-right: 40px;">
+                    <ui:Button text="Create Icon" display-tooltip-when-elided="true" name="createIconButton" class="upperButtons" />
+                    <ui:Button text="Load Prefab" display-tooltip-when-elided="true" name="loadPrefabButton" class="upperButtons" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="optionsContainer" style="width: 400px;">
+                <ui:VisualElement name="cameraOptions" class="optionsCategoryContainer">
+                    <ui:Label text="Camera" display-tooltip-when-elided="true" name="cameraOptionsLabel" class="optionCategoryLabels" />
+                    <ui:Slider picking-mode="Ignore" label="X Rotation" value="42" high-value="100" name="cameraXRotation" class="options" />
+                    <ui:Slider picking-mode="Ignore" label="Y Rotation" value="42" high-value="100" name="cameraYRotation" class="options" />
+                    <ui:Slider picking-mode="Ignore" label="Zoom" value="42" high-value="100" name="cameraZoom" class="options" />
+                    <ui:Slider picking-mode="Ignore" label="X Position" value="42" high-value="100" name="cameraXPosition" class="options" />
+                    <ui:Slider picking-mode="Ignore" label="Y Position" value="42" high-value="100" name="cameraYPosition" class="options" />
+                </ui:VisualElement>
+                <ui:VisualElement name="objectOptions" class="optionsCategoryContainer">
+                    <ui:Label text="Object" display-tooltip-when-elided="true" name="objectOptionsLabel" class="optionCategoryLabels" />
+                    <ui:Slider picking-mode="Ignore" label="X Rotation" value="42" high-value="100" name="objectXRotation" class="options" />
+                    <ui:Slider picking-mode="Ignore" label="Y Rotation" value="42" high-value="100" name="objectYRotation" class="options" />
+                    <ui:Slider picking-mode="Ignore" label="Z Rotation" value="42" high-value="100" name="objectZRotation" class="options" />
+                </ui:VisualElement>
+                <ui:VisualElement name="lightingOptions" class="optionsCategoryContainer">
+                    <ui:Label text="Lighting" display-tooltip-when-elided="true" name="objectOptionsLabel" class="optionCategoryLabels" />
+                    <ui:VisualElement name="firstLightColorFieldContainer" class="colorFieldContainer">
+                        <ui:Label text="Light Color 1" display-tooltip-when-elided="true" name="Label" class="optionLabels" />
+                        <UIColorField name="firstLightColorField" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="secondLightColorFieldContainer" class="colorFieldContainer">
+                        <ui:Label text="Light Color 2" display-tooltip-when-elided="true" name="Label" class="optionLabels" />
+                        <UIColorField name="secondLightColorField" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="backgroundOptions" class="optionsCategoryContainer">
+                    <ui:Label text="Background" display-tooltip-when-elided="true" name="backgroundOptionsLabel" class="optionCategoryLabels" />
+                    <ui:VisualElement name="backgroundColorFieldContainer" class="colorFieldContainer">
+                        <ui:Label text="Background Color" display-tooltip-when-elided="true" name="Label" class="optionLabels" />
+                        <UIColorField name="backgroundColorField" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="backgroundToggleContainer" class="toggleContainer">
+                        <ui:Label text="Background On/Off" display-tooltip-when-elided="true" />
+                        <ui:Toggle name="backgroundToggle" class="options optionToggles" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

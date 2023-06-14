@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/progressContainer.uss?fileID=7433441132597879392&amp;guid=645c883e9d24d7348aff59cf238d1a97&amp;type=3#progressContainer" />
+    <ui:VisualElement name="progressContainer" class="container">
+        <ui:Label text="Label" display-tooltip-when-elided="true" name="progressHeader" class="header" />
+        <ui:ProgressBar title="my-progress" name="progressBar" />
+    </ui:VisualElement>
+</ui:UXML>
