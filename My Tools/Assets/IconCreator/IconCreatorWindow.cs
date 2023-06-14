@@ -150,7 +150,6 @@ namespace SahilariousGames.IconCreator
 
         // ------------------------------ Lighting Options ------------------------------
 
-
         private UIColorField m_lightOnecolorField;
 
         private UIColorField m_lightTwocolorField;
@@ -161,7 +160,6 @@ namespace SahilariousGames.IconCreator
 
         private Toggle m_backgroundToggle;
 
-
         private void OnCreateIconButtonSelected()
         {
             if (m_currentLoadedObject)
@@ -169,15 +167,13 @@ namespace SahilariousGames.IconCreator
                 UpdateViewport();
 
                 string path = $"Assets/IconCreator/Images/{m_currentLoadedObject.name}-{GUID.Generate()}.png";
-                //m_viewport.sprite.
                 // Encode texture into PNG
                 byte[] bytes = ImageConversion.EncodeToPNG(m_viewport.sprite.texture);
 
                 // write to a file in the project folder
-                //File.WriteAllBytes(path, bytes);
+                File.WriteAllBytes(path, bytes);
 
-
-                WriteImageFile(path, bytes);
+                AssetDatabase.Refresh();
             }
         }
 
@@ -229,7 +225,7 @@ namespace SahilariousGames.IconCreator
 
             texture.ReadPixels(rect, 0, 0);
 
-            ////////////////////////////////////////////
+            /////////////////////  Removes the image background if Background On/Off toggle is off ///////////////////////
 
             if (m_backgroundToggle.value == false)
             {
