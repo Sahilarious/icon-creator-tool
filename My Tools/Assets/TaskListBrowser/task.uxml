@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/TaskListBrowser/TaskListBrowser.uss?fileID=7433441132597879392&amp;guid=f3c8879a9a4bfd84c867ef49273dcca8&amp;type=3#TaskListBrowser" />
+    <ui:VisualElement name="task" class="task" style="width: 100%; height: 20px;">
+        <ui:Toggle class="taskToggle" />
+        <ui:Label text="Label" display-tooltip-when-elided="true" name="taskText" style="width: 80%; -unity-text-align: middle-left;" />
+        <ui:Button text="x" display-tooltip-when-elided="true" name="removeTaskButton" class="removeTaskButton" />
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/TaskListBrowser/TaskListBrowser.uss?fileID=7433441132597879392&amp;guid=f3c8879a9a4bfd84c867ef49273dcca8&amp;type=3#TaskListBrowser" />
+    <ui:VisualElement name="listContainer" class="listContainer">
+        <ui:VisualElement name="listContainerHeader" class="listContainerHeader" style="background-color: rgb(53, 53, 53); flex-direction: row;">
+            <ui:VisualElement name="dragSelector" class="dragSelector" />
+            <ui:Label text="List" display-tooltip-when-elided="true" name="listLabel" class="listLabel" />
+            <ui:Button text="+" display-tooltip-when-elided="true" name="addTaskButton" class="addTaskButton" />
+        </ui:VisualElement>
+        <ui:ProgressBar title="my-progress" name="progressBar" class="progressBar" />
+        <ui:VisualElement name="taskContainer" class="taskContainer" />
+    </ui:VisualElement>
+</ui:UXML>

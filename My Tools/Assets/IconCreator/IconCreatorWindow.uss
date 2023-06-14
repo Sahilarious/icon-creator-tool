@@ -1,0 +1,50 @@
+.upperButtons {
+    font-size: 26px;
+    -unity-font-style: bold;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.options {
+    font-size: 22px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.optionCategoryLabels {
+    font-size: 26px;
+    background-color: rgb(60, 60, 60);
+    -unity-font-style: bold;
+    margin-bottom: 10px;
+}
+
+.optionsCategoryContainer {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.colorFieldContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.optionLabels {
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.optionToggles {
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 100px;
+}
+
+.toggleContainer {
+    font-size: 22px;
+    flex-direction: row;
+    justify-content: space-between;
+}

@@ -1,0 +1,5 @@
+.buttons {
+    font-size: 19px;
+    -unity-font-style: bold;
+    justify-content: flex-start;
+}
